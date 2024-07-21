@@ -15,6 +15,8 @@ body {
   min-width: 320px;
   width: 90%;
   max-width: 400px;
+  box-shadow: 1rem 1rem 1rem hsl(221, 100%, 96%);
+  border-radius: 1rem;
 }
 
 #card-head {
@@ -58,24 +60,89 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem;
+}
+#card-body #title {
+  font-weight: 700;
 }
 
 .section {
   padding: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
+}
+.section div {
+  display: flex;
+  gap: 1rem;
+}
+.section span {
+  color: gray;
 }
 .section-reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
 }
+.section-reaction div {
+  color: hsl(0, 100%, 67%);
+}
 .section-memory {
   background-color: hsla(39, 100%, 56%, 0.1);
+}
+.section-memory div {
+  color: hsl(39, 100%, 56%);
 }
 .section-verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
 }
+.section-verbal div {
+  color: hsl(166, 100%, 37%);
+}
 .section-visual {
   background-color: hsla(234, 85%, 45%, 0.1);
+}
+.section-visual div {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+  font-weight: 700;
+  border: none;
+}
+button:hover {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    max-width: 700px;
+  }
+  #card-head {
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 3rem;
+  }
+  #card-head p {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  #card-head #general-score {
+    font-size: 4rem;
+  }
+  #card-head #level-score {
+    font-size: 1.5rem;
+  }
+  #circle {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
