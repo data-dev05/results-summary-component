@@ -28,8 +28,9 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
 
 //Body Copy
 
-$Font-size-paragraphs: 18px
+$Font-size-paragraphs: 18px;
 
 //Font
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
-//$Family-Hanken-Grotesk: https://fonts.google.com/specimen/Hanken+Grotesk); //Weights: 500, 700, 800
+$Family-Hanken-Grotesk: "Hanken Grotesk", sans-serif; //Weights: 500, 700, 800

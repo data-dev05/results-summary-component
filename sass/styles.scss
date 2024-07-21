@@ -1,1 +1,45 @@
 @use "./variables" as *;
+
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-size: $Font-size-paragraphs;
+    font-family: $Family-Hanken-Grotesk;
+    display: grid;
+    place-items: center;
+}
+
+#card {
+    min-width: 320px;
+    width: 90%;
+    max-width: 400px;
+}
+
+#card-head {
+    background:linear-gradient(180deg, $Light-slate-blue-background, $Light-royal-blue-background);
+    color: $Pale-blue;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#circle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, $Violet-blue-circle, $Persian-blue-circle);
+}
+
+p {
+    font-size: 0.8rem;
+}
